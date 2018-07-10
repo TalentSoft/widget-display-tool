@@ -1,0 +1,35 @@
+{
+    "name": "@talentsoft/tool-widget-test",
+    "version": "0.0.1",
+    "description": "Widget Simulator",
+    "scripts": {
+        "start": "webpack-dev-server --config webpack.config.js --content-base build/"
+    },
+    "author": "Talentsoft",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@talentsoft/integration-widget-component": "^0.0.5",
+        "@types/react": "^16.3.18",
+        "@types/react-collapsible": "^2.2.0",
+        "@types/react-dom": "^16.0.6",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-preset-react": "^6.24.1",
+        "copy-webpack-plugin": "^4.5.1",
+        "cp-file-cli": "^1.0.1",
+        "css-loader": "^0.28.11",
+        "es6-shim": "^0.35.3",
+        "file-loader": "^1.1.11",
+        "less": "^3.0.4",
+        "less-loader": "^4.1.0",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "style-loader": "^0.21.0",
+        "ts-loader": "^4.4.1",
+        "typescript": "^2.9.2",
+        "webpack": "^4.5.0",
+        "webpack-cli": "^3.0.8",
+        "webpack-dev-server": "^3.1.0",
+        "write-file-webpack-plugin": "^4.3.2"
+    }
+}

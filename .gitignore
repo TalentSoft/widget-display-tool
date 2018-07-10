@@ -1,0 +1,7 @@
+.vscode
+node_modules
+yarn-error.log
+build/assets
+build/dist
+build/integration.bundle.js
+build/widget.bundle.js

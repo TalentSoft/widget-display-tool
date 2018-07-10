@@ -1,0 +1,80 @@
+@themeColor: darkblue;
+@fontColorOnTheme: darkblue;
+@fontColorOnNeutral: darkblue;
+@backgroundColor: white;
+@backgroundOpacity: white;
+
+@import "~@talentsoft/uxp-themes/dist/assets/styles/index.less";
+@import "~@talentsoft/integration-widget-component/dist/src/assets/widget.less";
+
+.main {
+    background-image: url("../assets/images/hip-square.png");
+    background-repeat: repeat;
+    background-size: 20%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#tool__widget__simul {
+    font-size: 1.4rem;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.tool__widget__header {
+    display: flex;
+    align-content: space-between;
+    background-color: darkblue;
+}
+
+.tool__widget__empty__area {
+    width: 85%;
+}
+
+.tool__widget__settings {
+    align-self: center;
+    justify-self: right;
+    font-family: "uxpfont";
+    font-size: 3rem;
+    color: white;
+
+    &:hover {
+        background-color: rgb(55, 55, 139);
+        cursor: pointer;
+    }
+}
+
+.tool__widget__config {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: darkblue;
+    border-top: 1px solid;
+    border-color: lightblue;
+}
+
+.tool__widget__display {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tool_widget_in_test {
+    width: 370px;
+}
+
+.tool_widget_dummy {
+    width: 370px;
+}
