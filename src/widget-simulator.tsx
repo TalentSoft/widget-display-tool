@@ -39,22 +39,21 @@ export class WidgetSimulator extends React.Component<{}, WidgetSimulatorState> {
     changeSize = (size: WidgetSize) => {
         const sizeWidgetToTest = (size === WidgetSize.Enlarged) ? WidgetSize.Minimized : WidgetSize.Normal;
 
-        this.setState(
-            {
-                sizeWidgetDummy: size,
-                sizeWidgetToTest: sizeWidgetToTest
-            }
-        );
+        this.setState({
+            sizeWidgetDummy: size,
+            sizeWidgetToTest: sizeWidgetToTest
+        });
     }
 
     updateSettingsVisibility = () => {
-        const show = !this.state.settingsAreVisible;
-        this.setState({settingsAreVisible: show});
+        this.setState(prevState => ({
+            settingsAreVisible: !prevState.settingsAreVisible
+        }))
     }
 
     render() {
-        const {language, mode, sizeWidgetDummy, sizeWidgetToTest} = this.state;
-        const key = `${language}-${mode}-${sizeWidgetDummy}`;
+        const {language, mode, sizeWidgetDummy, sizeWidgetToTest, settingsAreVisible} = this.state;
+        const key = `${language}-${mode}-${sizeWidgetDummy}-${settingsAreVisible}`;
 
         return (
             <React.Fragment>
@@ -70,7 +69,7 @@ export class WidgetSimulator extends React.Component<{}, WidgetSimulatorState> {
                     language={language} 
                     mode={mode}
                     sizeWidgetDummy={sizeWidgetDummy}
-                    sizeWidgetToTest={sizeWidgetToTest}
+                    sizeWidgetUnderTest={sizeWidgetToTest}
                     changeSize={this.changeSize} />
             </React.Fragment>
         )

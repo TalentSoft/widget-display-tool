@@ -9,6 +9,7 @@
 
 html, body {
     height: 100%;
+    overflow: hidden;
 }
 
 .main {
@@ -43,20 +44,43 @@ html, body {
         background-color: rgb(55, 55, 139);
         cursor: pointer;
     }
+    
 }
 
 .tool__widget__config {
-    flex-direction: column;
-    top: 0;
-    left: 0;
-    height: 10%;
     width: 100%;
-    align-items: center;
     justify-content: space-around;
     color: white;
     background-color: darkblue;
     border-top: 1px solid;
     border-color: lightblue;
+    overflow: hidden;
+    
+    max-height: 0;
+    transition: max-height .5s; 
+
+    &__content {
+        padding: 2rem;
+        display: flex;
+        justify-content: flex-end;
+
+        div {
+            margin-left: 10px;
+        }
+
+        select {
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 5px;
+            background: white;
+            color: darkblue;
+            margin-left: 5px;
+        }
+    }
+
+    &--open {
+        max-height: 300px;
+    }
 }
 
 .tool__widget__display {
@@ -67,19 +91,27 @@ html, body {
 
     &.enlarged {
         flex-direction: column-reverse;
-        padding: 1rem;
+        padding: 1rem 4rem;
         align-items: flex-start;
+        width: 1280px;
+        margin: auto;
 
         .tool_widget_dummy { 
             width: 100%;
             flex: 1;
+
+            .icon-reduce {
+                font-size: 19px !important;
+                position: relative;
+                top: -8px;
+            }
         }
 
         .widget-base {
             height: 100%;
         }
 
-        .tool_widget_in_test {
+        .tool_widget_under_test {
             width: 175px;
             height: 175px;
             margin-top: 1rem;
@@ -101,7 +133,7 @@ html, body {
     }
 }
 
-.tool_widget_in_test {
+.tool_widget_under_test {
     width: 370px;
 }
 
