@@ -29,11 +29,11 @@ export class WidgetSimulator extends React.Component<{}, WidgetSimulatorState> {
     }
 
     changeLanguage = (language: string) => {
-        this.setState({language: language});
+        this.setState({language});
     }
 
     changeMode = (mode: WidgetMode) => {
-        this.setState({mode: mode});
+        this.setState({mode});
     }
 
     changeSize = (size: WidgetSize) => {

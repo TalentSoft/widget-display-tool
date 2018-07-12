@@ -13,7 +13,7 @@ export class WidgetDummy extends React.Component<WidgetDummyProps, {}> {
         const {mode, language, size} = this.props;
 
         return Promise.resolve(
-            {size: size, mode: mode, title: 'Dummy Widget', language: language, enlargeable: true}
+            {size, mode, title: 'Dummy Widget', language, enlargeable: true}
         );
     }
 
@@ -39,7 +39,7 @@ export class WidgetDummy extends React.Component<WidgetDummyProps, {}> {
             expand: this.expand,
             reduce: this.reduce,
             openPartnerApplicationInNewTab: (partnerName:string) => Promise.resolve({}),
-            loadData: (partnerName: string) => Promise.resolve({})
+            loadData: (partnerName: string) => Promise.resolve([])
         };
         
         return (
