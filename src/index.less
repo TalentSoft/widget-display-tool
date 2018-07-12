@@ -7,34 +7,29 @@
 @import "~@talentsoft/uxp-themes/dist/assets/styles/index.less";
 @import "~@talentsoft/integration-widget-component/dist/src/assets/widget.less";
 
+html, body {
+    height: 100%;
+}
+
 .main {
     background-image: url("../assets/images/hip-square.png");
     background-repeat: repeat;
     background-size: 20%;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-}
-
 #tool__widget__simul {
+    display: flex;
+    flex-direction: column;
     font-size: 1.4rem;
-    top:0;
-    left:0;
     width: 100%;
     height: 100%;
 }
 
 .tool__widget__header {
     display: flex;
-    align-content: space-between;
+    justify-content: space-between;
     background-color: darkblue;
-}
-
-.tool__widget__empty__area {
-    width: 85%;
+    padding: 0 10px;
 }
 
 .tool__widget__settings {
@@ -65,10 +60,45 @@ body {
 }
 
 .tool__widget__display {
-    height: 100%;
+    flex: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    &.enlarged {
+        flex-direction: column-reverse;
+        padding: 1rem;
+        align-items: flex-start;
+
+        .tool_widget_dummy { 
+            width: 100%;
+            flex: 1;
+        }
+
+        .widget-base {
+            height: 100%;
+        }
+
+        .tool_widget_in_test {
+            width: 175px;
+            height: 175px;
+            margin-top: 1rem;
+        }
+
+        .widget-minified {
+            width: 175px;
+            height: 175px;
+        }
+
+        .widget-minified .widget-enlargeable:before {
+            left: 8%;
+            top: -25px;
+        }
+
+        .widget-content.enlarged {
+            height: auto;
+        }
+    }
 }
 
 .tool_widget_in_test {

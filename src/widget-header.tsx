@@ -20,7 +20,6 @@ export class WidgetHeader extends React.Component<WidgetHeaderProps, {}> {
                 <div>
                     <img src={require("../assets/images/logoTS-white.png")}></img>
                 </div>
-                <div className="tool__widget__empty__area"></div>
                 <div className="tool__widget__settings uxp-icons mov-icons" onClick={this.handleClick}>o</div>
             </div>
         );        

@@ -4,7 +4,6 @@ import { WidgetMode, WidgetSize } from '@talentsoft/integration-widget-component
 import {WidgetToTest} from './widget-to-test'
 import {WidgetDummy} from './widget-dummy'
 
-
 export interface WidgetDisplayProps {
     mode: WidgetMode;
     language: string;
@@ -18,8 +17,13 @@ export class WidgetDisplay extends React.Component<WidgetDisplayProps, {}> {
     render() {
         const {mode, language, changeSize, sizeWidgetToTest, sizeWidgetDummy} = this.props;
 
+        let className = "tool__widget__display";
+        if (sizeWidgetDummy === WidgetSize.Enlarged) {
+            className = className.concat(" enlarged");
+        }
+
         return (
-            <div className="tool__widget__display">
+            <div className={className}>
                 <div className="tool_widget_in_test">
                     <WidgetToTest mode={mode} language={language} size={sizeWidgetToTest}/>
                 </div>
