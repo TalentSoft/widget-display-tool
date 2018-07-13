@@ -69,7 +69,7 @@ export class WidgetSimulator extends React.Component<{}, WidgetSimulatorState> {
                     language={language} 
                     mode={mode}
                     sizeWidgetDummy={sizeWidgetDummy}
-                    sizeWidgetUnderTest={sizeWidgetToTest}
+                    sizeWidgetToTest={sizeWidgetToTest}
                     changeSize={this.changeSize} />
             </React.Fragment>
         )
