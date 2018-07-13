@@ -6,15 +6,14 @@
   version "1.1.7"
   resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/hylia/-/hylia-1.1.7.tgz#43930ee14401622b3e0b082b0d00654a10270045"
 
-"@talentsoft/integration-widget-component@^0.0.5":
-  version "0.0.5"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-0.0.5.tgz#6f2968ef3105c30dc02655ef50fd3680c4db16c3"
+"@talentsoft/integration-widget-component@^0.0.7":
+  version "0.0.7"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-0.0.7.tgz#2adaf5b6c80a988f3bbeef0188099e8814772f37"
   dependencies:
     "@talentsoft/hylia" "^1.0.4"
     "@talentsoft/uxp-themes" "^3.0.1"
     classnames "^2.2.6"
     react "^16.2.0"
-    react-dom "16.2.0"
 
 "@talentsoft/uxp-themes@^3.0.1":
   version "3.0.1"
@@ -3819,15 +3818,6 @@ rc@^1.1.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
-
-react-dom@16.2.0:
-  version "16.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
 
 react-dom@^16.4.1:
   version "16.4.1"
