@@ -2,7 +2,7 @@ import * as React from 'react';
 import { WidgetMode, WidgetSize } from '@talentsoft/integration-widget-component';
 
 import {WidgetToTest} from './widget-to-test'
-import {WidgetDummy} from './widget-dummy'
+import {WidgetDummy} from './widget-mock'
 
 export interface WidgetDisplayProps {
     mode: WidgetMode;
@@ -24,10 +24,10 @@ export class WidgetDisplay extends React.Component<WidgetDisplayProps, {}> {
 
         return (
             <div className={className}>
-                <div className="tool_widget_in_test">
+                <div className="tool__widget__in__test">
                     <WidgetToTest mode={mode} language={language} size={sizeWidgetToTest}/>
                 </div>
-                <div className="tool_widget_dummy">
+                <div className="tool__widget__mock">
                     <WidgetDummy mode={mode} language={language} changeSize={changeSize} size={sizeWidgetDummy}/>
                 </div>
             </div>

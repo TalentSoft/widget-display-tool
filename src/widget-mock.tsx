@@ -13,7 +13,7 @@ export class WidgetDummy extends React.Component<WidgetDummyProps, {}> {
         const {mode, language, size} = this.props;
 
         return Promise.resolve(
-            {size, mode, title: 'Dummy Widget', language, enlargeable: true}
+            {size, mode, title: 'Mock Widget', language, enlargeable: true}
         );
     }
 

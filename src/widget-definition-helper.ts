@@ -1,8 +1,8 @@
 const pattern: string = "integration/";
 const property: string = "Widget";
+const regexp = new RegExp(pattern, "i");
 
 export function getWidgetDefinition (window: any) {
-    const regexp = new RegExp(pattern, "i");
     const widgetNames = Object.keys(window)
         .filter(name => name.match(regexp) && window[name].hasOwnProperty(property));
 
