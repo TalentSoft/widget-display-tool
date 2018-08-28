@@ -88,6 +88,15 @@ html, body {
     justify-content: space-around;
     align-items: center;
 
+    .widget-header .title {
+        position: relative;
+    }
+
+    .widget-minified {
+        position: relative;
+        height: 370px;        
+    }
+
     &.enlarged {
         flex-direction: column-reverse;
         padding: 1rem 4rem;
@@ -95,7 +104,7 @@ html, body {
         width: 1280px;
         margin: auto;
 
-        .tool_widget_dummy { 
+        .tool__widget__mock { 
             width: 100%;
             flex: 1;
 
@@ -110,7 +119,7 @@ html, body {
             height: 100%;
         }
 
-        .tool_widget_in_test {
+        .tool__widget__in__test {
             width: 175px;
             height: 175px;
             margin-top: 1rem;
@@ -123,7 +132,7 @@ html, body {
 
         .widget-minified .widget-enlargeable:before {
             left: 8%;
-            top: -25px;
+            top: -10px;
         }
 
         .widget-content.enlarged {
@@ -132,10 +141,10 @@ html, body {
     }
 }
 
-.tool_widget_in_test {
+.tool__widget__in__test {
     width: 370px;
 }
 
-.tool_widget_dummy {
+.tool__widget__mock {
     width: 370px;
 }

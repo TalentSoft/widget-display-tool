@@ -6,9 +6,9 @@
   version "1.1.7"
   resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/hylia/-/hylia-1.1.7.tgz#43930ee14401622b3e0b082b0d00654a10270045"
 
-"@talentsoft/integration-widget-component@^0.0.7":
-  version "0.0.7"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-0.0.7.tgz#2adaf5b6c80a988f3bbeef0188099e8814772f37"
+"@talentsoft/integration-widget-component@^0.0.8":
+  version "0.0.8"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-0.0.8.tgz#10076f29b6e38e2dbbe3a0fd97cd6ebac34fb55f"
   dependencies:
     "@talentsoft/hylia" "^1.0.4"
     "@talentsoft/uxp-themes" "^3.0.1"
