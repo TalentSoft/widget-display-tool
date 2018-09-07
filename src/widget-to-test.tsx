@@ -52,12 +52,15 @@ export class WidgetToTest extends React.Component<WidgetToTestProps, WidgetToTes
             restoreSize: (appid: string) => Promise.resolve({}),
             expand: (appid: string) => Promise.resolve({}),
             reduce: (appid: string) => Promise.resolve({}),
-            openPartnerApplicationInNewTab: openPartnerLink,
+            openUrlInNewTab: openPartnerLink,
+            openUrlInCurrentTab: (url:string) => Promise.resolve({}),
             loadData: loadData
         };
         
+        const params = {'urlredirection': ''};
+
         return (
-            <Widget appid={appid} appService={appService} bodyComponent={widget} name={appname}/>
+            <Widget appid={appid} appService={appService} bodyComponent={widget} name={appname} params={params}/>
         );
     }
 }

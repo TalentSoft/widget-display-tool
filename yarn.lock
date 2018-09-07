@@ -2,15 +2,15 @@
 # yarn lockfile v1
 
 
-"@talentsoft/hylia@^1.0.4":
+"@talentsoft/hylia@^1.1.6":
   version "1.1.7"
   resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/hylia/-/hylia-1.1.7.tgz#43930ee14401622b3e0b082b0d00654a10270045"
 
-"@talentsoft/integration-widget-component@^0.0.8":
-  version "0.0.8"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-0.0.8.tgz#10076f29b6e38e2dbbe3a0fd97cd6ebac34fb55f"
+"@talentsoft/integration-widget-component@^1.2.0":
+  version "1.2.0"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-1.2.0.tgz#a103aae1c5061171162b292be2fc2090e8bf8a63"
   dependencies:
-    "@talentsoft/hylia" "^1.0.4"
+    "@talentsoft/hylia" "^1.1.6"
     "@talentsoft/uxp-themes" "^3.0.1"
     classnames "^2.2.6"
     react "^16.2.0"

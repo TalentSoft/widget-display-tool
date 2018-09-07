@@ -38,12 +38,15 @@ export class WidgetDummy extends React.Component<WidgetDummyProps, {}> {
             restoreSize: (appid: string) => Promise.resolve({}),
             expand: this.expand,
             reduce: this.reduce,
-            openPartnerApplicationInNewTab: (partnerName:string) => Promise.resolve({}),
+            openUrlInNewTab: (url:string) => Promise.resolve({}),
+            openUrlInCurrentTab: (url:string) => Promise.resolve({}),
             loadData: (partnerName: string) => Promise.resolve([])
         };
         
+        const params = {};
+
         return (
-            <Widget appid={appid} appService={appService} bodyComponent={widget} name={appname}/>
+            <Widget appid={appid} appService={appService} bodyComponent={widget} name={appname} params={params}/>
         );
     }
 }
