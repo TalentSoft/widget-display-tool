@@ -18,7 +18,7 @@ If you need to change the port number of the local url, you can change it in the
 
 Customize data displayed by your widget:
 ----------------------------------------
-If you want to change the content displayed by your widget, you can modify hooks in the file : src/widget-to-test-helper.cs
+If you want to change the content displayed by your widget, you can modify hooks in the file : src/widget-to-test-helper.ts
 Modifications made in the file automatically trigger a compilation on the fly and are taken into account in the UI
 
 Known issue(s):
