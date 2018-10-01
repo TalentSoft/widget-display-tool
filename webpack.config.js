@@ -19,7 +19,10 @@ module.exports = env => {
             port: 5555
         },
         plugins: [
-            new CopyPlugin([{from: env.bundleFile, to: './integration.bundle.js'}]),
+            new CopyPlugin([
+                {from: env.bundleFile, to: './integration.bundle.js'},
+                {from: './node_modules/@talentsoft/integration-dll/dist/integration.dll.js', to: './integration.dll.js'}                
+            ]),
             new WriteFilePlugin()
         ],
         resolve: {

@@ -6,6 +6,19 @@
   version "1.1.7"
   resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/hylia/-/hylia-1.1.7.tgz#43930ee14401622b3e0b082b0d00654a10270045"
 
+"@talentsoft/integration-com-layer@^1.2.0":
+  version "1.2.0"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-com-layer/-/integration-com-layer-1.2.0.tgz#6bac9907c469bd27afd169ab8a1c245811f13d31"
+
+"@talentsoft/integration-dll@^1.2.0":
+  version "1.2.0"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-dll/-/integration-dll-1.2.0.tgz#3190668b5862bc8c63b3382c0b47852b209be70a"
+  dependencies:
+    "@talentsoft/hylia" "^1.1.6"
+    "@talentsoft/integration-com-layer" "^1.2.0"
+    react "^16.2.0"
+    react-dom "^16.2.0"
+
 "@talentsoft/integration-widget-component@^1.2.0":
   version "1.2.0"
   resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-1.2.0.tgz#a103aae1c5061171162b292be2fc2090e8bf8a63"
@@ -3701,6 +3714,13 @@ prop-types@^15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+prop-types@^15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
+  dependencies:
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
+
 proxy-addr@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/proxy-addr/-/proxy-addr-2.0.3.tgz#355f262505a621646b3130a728eb647e22055341"
@@ -3818,6 +3838,15 @@ rc@^1.1.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+react-dom@^16.2.0:
+  version "16.5.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    schedule "^0.5.0"
 
 react-dom@^16.4.1:
   version "16.4.1"
@@ -4059,6 +4088,12 @@ safe-regex@^1.1.0:
 sax@^1.2.4, sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+
+schedule@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/schedule/-/schedule-0.5.0.tgz#c128fffa0b402488b08b55ae74bb9df55cc29cc8"
+  dependencies:
+    object-assign "^4.1.1"
 
 schema-utils@^0.4.4, schema-utils@^0.4.5:
   version "0.4.5"
