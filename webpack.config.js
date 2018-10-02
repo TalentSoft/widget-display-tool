@@ -1,6 +1,7 @@
 var path = require('path');
 var CopyPlugin = require('copy-webpack-plugin');
 var WriteFilePlugin = require('write-file-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = env => {
 
@@ -24,7 +25,10 @@ module.exports = env => {
                 {from: './node_modules/@talentsoft/integration-dll/dist/integration.dll.js', to: './integration.dll.js'},
                 {from: './node_modules/@talentsoft/display-tool-widget-mock/dist/main.bundle.js', to: './widget.mock.bundle.js'}
             ]),
-            new WriteFilePlugin()
+            new WriteFilePlugin(),
+            new CleanWebpackPlugin(
+                [path.resolve(__dirname, 'build')],
+                {exclude: ['index.html']}),
         ],
         resolve: {
             extensions: ['.ts', '.js', '.tsx']    
