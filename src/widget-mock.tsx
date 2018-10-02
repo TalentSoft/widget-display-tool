@@ -28,9 +28,9 @@ export class WidgetDummy extends React.Component<WidgetDummyProps, {}> {
     }
 
     render() {
-        const appname = 'dummy';
-        const widget = (window as any)['integration/dummy'].Widget;
-        const appid = "dummy-for-demo";
+        const appname = 'mock';
+        const widget = (window as any)['integration/mock'].Widget;
+        const appid = "mock-widget-for-reduce-expand";
 
         const appService = {
             getContext: this.getContext,

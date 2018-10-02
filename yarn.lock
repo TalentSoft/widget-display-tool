@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@talentsoft/display-tool-widget-mock@^1.0.1":
+  version "1.0.1"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/display-tool-widget-mock/-/display-tool-widget-mock-1.0.1.tgz#9facef62806bc254474400c10e17d69bb6e08f5d"
+  dependencies:
+    "@talentsoft/integration-dll" "^1.2.0"
+    "@types/node" "^9.6.5"
+    react "^16.2.0"
+
 "@talentsoft/hylia@^1.1.6":
   version "1.1.7"
   resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/hylia/-/hylia-1.1.7.tgz#43930ee14401622b3e0b082b0d00654a10270045"
@@ -37,6 +45,10 @@
 "@types/node@*":
   version "10.3.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.3.tgz#8798d9e39af2fa604f715ee6a6b19796528e46c3"
+
+"@types/node@^9.6.5":
+  version "9.6.32"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.32.tgz#1b64134f630b30c9cda4810aa4a94fc2d4141dbd"
 
 "@types/react-collapsible@^2.2.0":
   version "2.2.0"

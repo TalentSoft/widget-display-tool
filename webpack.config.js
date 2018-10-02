@@ -21,7 +21,8 @@ module.exports = env => {
         plugins: [
             new CopyPlugin([
                 {from: env.bundleFile, to: './integration.bundle.js'},
-                {from: './node_modules/@talentsoft/integration-dll/dist/integration.dll.js', to: './integration.dll.js'}                
+                {from: './node_modules/@talentsoft/integration-dll/dist/integration.dll.js', to: './integration.dll.js'},
+                {from: './node_modules/@talentsoft/display-tool-widget-mock/dist/main.bundle.js', to: './widget.mock.bundle.js'}
             ]),
             new WriteFilePlugin()
         ],
