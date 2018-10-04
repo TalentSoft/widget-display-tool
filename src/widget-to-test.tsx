@@ -3,7 +3,7 @@ import 'es6-shim';
 import { Widget, AppService, WidgetMode, WidgetSize } from '@talentsoft/integration-widget-component';
 import {getWidgetDefinition} from './widget-definition-helper';
 import {WidgetDefinition} from './widget-definition';
-import {loadData, openPartnerLink} from './widget-to-test-helper';
+import {loadData, openPartnerLink, getConfiguration} from './widget-to-test-helper';
 
 export interface WidgetToTestProps {
     mode: WidgetMode;
@@ -57,10 +57,10 @@ export class WidgetToTest extends React.Component<WidgetToTestProps, WidgetToTes
             loadData: loadData
         };
         
-        const params = {'urlredirection': ''};
+        const configuration: object = getConfiguration();
 
         return (
-            <Widget appid={appid} appService={appService} bodyComponent={widget} name={appname} params={params}/>
+            <Widget appid={appid} appService={appService} bodyComponent={widget} name={appname} params={configuration}/>
         );
     }
 }
