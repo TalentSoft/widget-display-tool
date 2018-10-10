@@ -2,11 +2,12 @@
 # yarn lockfile v1
 
 
-"@talentsoft/display-tool-widget-mock@^1.0.1":
-  version "1.0.1"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/display-tool-widget-mock/-/display-tool-widget-mock-1.0.1.tgz#9facef62806bc254474400c10e17d69bb6e08f5d"
+"@talentsoft/display-tool-widget-mock@^1.1.0":
+  version "1.1.0"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/display-tool-widget-mock/-/display-tool-widget-mock-1.1.0.tgz#bb471c448bac95c3bc3a06c804af6e4873a82b11"
   dependencies:
     "@talentsoft/integration-dll" "^1.2.0"
+    "@talentsoft/integration-widget-contract" "^1.1.0"
     "@types/node" "^9.6.5"
     react "^16.2.0"
 
@@ -27,14 +28,19 @@
     react "^16.2.0"
     react-dom "^16.2.0"
 
-"@talentsoft/integration-widget-component@^1.2.0":
-  version "1.2.0"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-1.2.0.tgz#a103aae1c5061171162b292be2fc2090e8bf8a63"
+"@talentsoft/integration-widget-component@^1.4.0":
+  version "1.4.0"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-1.4.0.tgz#77f4013e5ef2f41f6ce4632aa3816adbee54f227"
   dependencies:
     "@talentsoft/hylia" "^1.1.6"
     "@talentsoft/uxp-themes" "^3.0.1"
     classnames "^2.2.6"
     react "^16.2.0"
+    react-dom "^16.5.1"
+
+"@talentsoft/integration-widget-contract@^1.1.0":
+  version "1.1.0"
+  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-contract/-/integration-widget-contract-1.1.0.tgz#2d0e6aa388a76c03116be6dd1d265cc1aa03de65"
 
 "@talentsoft/uxp-themes@^3.0.1":
   version "3.0.1"
@@ -3857,7 +3863,7 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.2.0:
+react-dom@^16.2.0, react-dom@^16.5.1:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
   dependencies:
