@@ -1,6 +1,6 @@
 {
     "name": "@talentsoft/tool-widget-test",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Widget Simulator",
     "scripts": {
         "start": "webpack-dev-server --config webpack.config.js --content-base build/"
@@ -8,9 +8,9 @@
     "author": "Talentsoft",
     "license": "UNLICENSED",
     "dependencies": {
-        "@talentsoft/display-tool-widget-mock": "^1.0.1",
+        "@talentsoft/display-tool-widget-mock": "^1.1.0",
         "@talentsoft/integration-dll": "^1.2.0",
-        "@talentsoft/integration-widget-component": "^1.2.0",
+        "@talentsoft/integration-widget-component": "^1.4.0",
         "@types/react": "^16.3.18",
         "@types/react-collapsible": "^2.2.0",
         "@types/react-dom": "^16.0.6",
