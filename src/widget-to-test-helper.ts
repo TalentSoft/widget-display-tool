@@ -42,6 +42,6 @@ export function openPartnerLink(url: string) {
     return Promise.resolve(() => { });
 }
 
-export function getConfiguration() : object {
+export function getConfiguration() : { [name: string]: string } {
     return { };
 }

@@ -54,10 +54,11 @@ export class WidgetToTest extends React.Component<WidgetToTestProps, WidgetToTes
             reduce: (appid: string) => Promise.resolve({}),
             openUrlInNewTab: openPartnerLink,
             openUrlInCurrentTab: (url:string) => Promise.resolve({}),
-            loadData: loadData
+            loadData: loadData,
+            getUrlForCurrentContext: (param: {partnerName: string, url: string}) => Promise.resolve("")
         };
         
-        const configuration: object = getConfiguration();
+        const configuration: { [name: string]: string } = getConfiguration();
 
         return (
             <Widget appid={appid} appService={appService} bodyComponent={widget} name={appname} params={configuration}/>
