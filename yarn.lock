@@ -2,59 +2,42 @@
 # yarn lockfile v1
 
 
-"@talentsoft/display-tool-widget-mock@^1.1.0":
+"@talentsoft-opensource/display-tool-widget-mock@^1.1.0":
   version "1.1.0"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/display-tool-widget-mock/-/display-tool-widget-mock-1.1.0.tgz#bb471c448bac95c3bc3a06c804af6e4873a82b11"
+  resolved "http://localhost:4873/@talentsoft-opensource%2fdisplay-tool-widget-mock/-/display-tool-widget-mock-1.1.0.tgz#d295bef6f4f7f100e0553387e27e2ac9d99c4ed0"
   dependencies:
-    "@talentsoft/integration-dll" "^1.2.0"
-    "@talentsoft/integration-widget-contract" "^1.1.0"
-    "@types/node" "^9.6.5"
+    "@talentsoft-opensource/integration-dll" "^1.2.0"
     react "^16.2.0"
 
-"@talentsoft/hylia@^1.1.6":
-  version "1.1.7"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/hylia/-/hylia-1.1.7.tgz#43930ee14401622b3e0b082b0d00654a10270045"
+"@talentsoft-opensource/hylia@^1.1.6":
+  version "1.1.6"
+  resolved "http://localhost:4873/@talentsoft-opensource%2fhylia/-/hylia-1.1.6.tgz#9910c349a820dbe3d78ff4bcc1f7fd07646247ea"
 
-"@talentsoft/integration-com-layer@^1.2.0":
-  version "1.2.0"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-com-layer/-/integration-com-layer-1.2.0.tgz#6bac9907c469bd27afd169ab8a1c245811f13d31"
-
-"@talentsoft/integration-dll@^1.2.0":
-  version "1.2.0"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-dll/-/integration-dll-1.2.0.tgz#3190668b5862bc8c63b3382c0b47852b209be70a"
+"@talentsoft-opensource/integration-dll@^1.2.0":
+  version "1.3.0"
+  resolved "http://localhost:4873/@talentsoft-opensource%2fintegration-dll/-/integration-dll-1.3.0.tgz#c53c1d522f41a967a79067a19ca2101eeaf71227"
   dependencies:
-    "@talentsoft/hylia" "^1.1.6"
-    "@talentsoft/integration-com-layer" "^1.2.0"
     react "^16.2.0"
-    react-dom "^16.2.0"
 
-"@talentsoft/integration-widget-component@^1.4.0":
-  version "1.4.0"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-component/-/integration-widget-component-1.4.0.tgz#77f4013e5ef2f41f6ce4632aa3816adbee54f227"
+"@talentsoft-opensource/integration-widget-component@^1.3.0":
+  version "1.3.0"
+  resolved "http://localhost:4873/@talentsoft-opensource%2fintegration-widget-component/-/integration-widget-component-1.3.0.tgz#8660f90e83883f253c53e32058bc0ddc890009ef"
   dependencies:
-    "@talentsoft/hylia" "^1.1.6"
-    "@talentsoft/uxp-themes" "^3.0.1"
+    "@talentsoft-opensource/hylia" "^1.1.6"
+    "@talentsoft-opensource/uxp-themes" "^3.0.1"
     classnames "^2.2.6"
     react "^16.2.0"
     react-dom "^16.5.1"
 
-"@talentsoft/integration-widget-contract@^1.1.0":
-  version "1.1.0"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/integration-widget-contract/-/integration-widget-contract-1.1.0.tgz#2d0e6aa388a76c03116be6dd1d265cc1aa03de65"
-
-"@talentsoft/uxp-themes@^3.0.1":
+"@talentsoft-opensource/uxp-themes@^3.0.1":
   version "3.0.1"
-  resolved "http://pkg.rd.talentsoft.com/npm/TalentsoftNpm/@talentsoft/uxp-themes/-/uxp-themes-3.0.1.tgz#61e315fa354c04b9bd8d303b167d454e58a0de38"
+  resolved "http://localhost:4873/@talentsoft-opensource%2fuxp-themes/-/uxp-themes-3.0.1.tgz#df0905e9aba9b6e2eca607a79c093a9a3d0bd58f"
   dependencies:
     perfect-scrollbar "^1.1.0"
 
 "@types/node@*":
   version "10.3.3"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.3.tgz#8798d9e39af2fa604f715ee6a6b19796528e46c3"
-
-"@types/node@^9.6.5":
-  version "9.6.32"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.32.tgz#1b64134f630b30c9cda4810aa4a94fc2d4141dbd"
 
 "@types/react-collapsible@^2.2.0":
   version "2.2.0"
@@ -3863,15 +3846,6 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.2.0, react-dom@^16.5.1:
-  version "16.5.2"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    schedule "^0.5.0"
-
 react-dom@^16.4.1:
   version "16.4.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
@@ -3880,6 +3854,15 @@ react-dom@^16.4.1:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
+
+react-dom@^16.5.1:
+  version "16.5.2"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.5.2.tgz#b69ee47aa20bab5327b2b9d7c1fe2a30f2cfa9d7"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    schedule "^0.5.0"
 
 react@^16.2.0, react@^16.4.1:
   version "16.4.1"
