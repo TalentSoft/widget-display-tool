@@ -5,7 +5,7 @@ import {WidgetDisplay} from './widget-display';
 import {WidgetHeader} from './widget-header';
 import {LanguageCodes} from './languages'
 
-import {WidgetMode, WidgetSize} from '@talentsoft/integration-widget-component';
+import {WidgetMode, WidgetSize} from '@talentsoft-opensource/integration-widget-component';
 
 export interface WidgetSimulatorState {
     language: string;

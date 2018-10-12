@@ -1,6 +1,6 @@
 import * as React from 'react';
 import 'es6-shim';
-import { Widget, AppService, WidgetMode, WidgetSize } from '@talentsoft/integration-widget-component';
+import { Widget, AppService, WidgetMode, WidgetSize } from '@talentsoft-opensource/integration-widget-component';
 import {getWidgetDefinition} from './widget-definition-helper';
 import {WidgetDefinition} from './widget-definition';
 import {loadData, openPartnerLink, getConfiguration} from './widget-to-test-helper';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { WidgetMode, WidgetSize } from '@talentsoft/integration-widget-component';
+import { WidgetMode, WidgetSize } from '@talentsoft-opensource/integration-widget-component';
 
 import {WidgetToTest} from './widget-to-test'
 import {WidgetDummy} from './widget-mock'

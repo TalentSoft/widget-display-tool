@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Widget, WidgetMode, WidgetSize } from '@talentsoft/integration-widget-component';
+import { Widget, WidgetMode, WidgetSize } from '@talentsoft-opensource/integration-widget-component';
 
 export interface WidgetDummyProps {
     mode: WidgetMode;
