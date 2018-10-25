@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {WidgetMode} from '@talentsoft/integration-widget-component';
+import {WidgetMode} from '@talentsoft-opensource/integration-widget-component';
 import {LanguageCodes, LanguageNames} from './languages';
 
 export interface WidgetConfigProps {
