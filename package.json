@@ -1,5 +1,5 @@
 {
-    "name": "@talentsoft-opensource/tool-widget-test",
+    "name": "@talentsoft-opensource/widget-display-tool",
     "version": "1.1.0",
     "description": "Widget Simulator",
     "scripts": {
