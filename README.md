@@ -2,8 +2,9 @@ How to launch
 --------------
 
 To launch the build and deployment of your widget locally:
-    Open a terminal in Visual Studio Code
-    Run: `yarn start --env.bundleFile [PATH + Filename of your bundle (widget)]`
+
+- Open a terminal in Visual Studio Code
+- Run: `yarn start --env.bundleFile [PATH + Filename of your bundle (widget)]`
 
 Display the widget:
 -------------------
@@ -25,7 +26,8 @@ If you need to change the port number of the local url, you can change it in the
 Customize data displayed by your widget:
 ----------------------------------------
 
-If you want to change the content displayed by your widget, you can modify hooks in the file : src/widget-to-test-helper.ts
+If you want to change the content displayed by your widget, you can modify hooks in the file : `src/widget-to-test-helper.ts`
+
 Modifications made in the file automatically trigger a compilation on the fly and are taken into account in the UI
 
 Known issue(s):
@@ -38,7 +40,7 @@ If you rebuild the bundle (of your widget) while the tool is launched, it will d
     i ｢wdm｣: Failed to compile.
 ```
 
-To fix that issue, you need to stop this tool : 
+To fix that issue, you need to stop this tool :
 
     In Visual Studio code terminal, execute Ctrl+C (Answer Y to end the program)
     Relaunch the tool: yarn start --env.bundleFile [PATH + Filename of your bundle]
