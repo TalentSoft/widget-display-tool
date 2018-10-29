@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Widget, WidgetMode, WidgetSize } from '@talentsoft-opensource/integration-widget-component';
+import {HostApiOptions} from './host-api-options';
 
 export interface WidgetDummyProps {
     mode: WidgetMode;
@@ -41,7 +42,8 @@ export class WidgetDummy extends React.Component<WidgetDummyProps, {}> {
             openUrlInNewTab: (url:string) => Promise.resolve({}),
             openUrlInCurrentTab: (url:string) => Promise.resolve({}),
             loadData: (partnerName: string) => Promise.resolve([]),
-            getUrlForCurrentContext: (param: {partnerName: string, url: string}) => Promise.resolve("")
+            getUrlForCurrentContext: (param: {partnerName: string, url: string}) => Promise.resolve(""),
+            requestExternalResource: (options: HostApiOptions) => Promise.resolve(new Response())
         };
         
         const params = {};

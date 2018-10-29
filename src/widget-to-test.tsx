@@ -3,7 +3,7 @@ import 'es6-shim';
 import { Widget, AppService, WidgetMode, WidgetSize } from '@talentsoft-opensource/integration-widget-component';
 import {getWidgetDefinition} from './widget-definition-helper';
 import {WidgetDefinition} from './widget-definition';
-import {loadData, openPartnerLink, getConfiguration} from './widget-to-test-helper';
+import {openPartnerLink, getConfiguration, requestExternalResource} from './widget-to-test-helper';
 
 export interface WidgetToTestProps {
     mode: WidgetMode;
@@ -54,8 +54,9 @@ export class WidgetToTest extends React.Component<WidgetToTestProps, WidgetToTes
             reduce: (appid: string) => Promise.resolve({}),
             openUrlInNewTab: openPartnerLink,
             openUrlInCurrentTab: (url:string) => Promise.resolve({}),
-            loadData: loadData,
-            getUrlForCurrentContext: (param: {partnerName: string, url: string}) => Promise.resolve("")
+            loadData: (partnerName: string) => Promise.resolve([]),
+            getUrlForCurrentContext: (param: {partnerName: string, url: string}) => Promise.resolve(""),
+            requestExternalResource: requestExternalResource
         };
         
         const configuration: { [name: string]: string } = getConfiguration();
